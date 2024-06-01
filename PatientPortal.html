@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal - Aster Hospital</title>
+    <link rel="stylesheet" href="PatientPortal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/aster.png" alt="Aster Hospital Logo" class="logo">
+            <div class="header-content">
+                <h1>Welcome to Aster Hospital</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="PatientPortal.html">Patient Portal</a></li>
+                        <li><a href="Appointments.html">Appointments</a></li>
+                        <li><a href="Specialisation.html">Specialities</a></li>
+                        <li><a href="Locations.html">Locations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="portal-container">
+            <h3>Login to Your Account</h3>
+            <p>Please use the form below to access your medical records, manage appointments, and communicate with your healthcare providers.</p>
+            <div class="container">
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button>Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Everyone!</h1>
+                            <p>Enter your personal details and start your journey with us</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aster Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

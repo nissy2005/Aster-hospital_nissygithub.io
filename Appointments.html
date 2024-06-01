@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="Appointments.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/aster.png" alt="Aster Hospital Logo" class="logo">
+            <div class="header-content">
+                <h1>Book Appointment with Our Doctor</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="PatientPortal.html">Patient Portal</a></li>
+                        <li><a href="Appointments.html">Appointments</a></li>
+                        <li><a href="Specialisation.html">Specialities</a></li>
+                        <li><a href="Locations.html">Locations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="doctor-info">
+            <h2>Doctor Information</h2>
+            <div class="doctor-details">
+                <img src="images/doctor.jpg" alt="Doctor Image">
+                <div class="doctor-description">
+                    <h3>Dr. Amjed Almufty
+                        <br>Consultant ENT
+                    </h3>
+                    <p>Specialty: ENT</p>
+                    <p>Nationality: Iraq</p>
+                    <p>Languages: Arabic, English</p>
+                </div>
+            </div>
+            <div class="next-button">
+                <button type="button">Next</button>
+            </div>
+        </section>
+        <section class="appointment-form">
+            <h2>Appointment Form</h2>
+            <form action="book_appointment.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Your Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="message">Additional Message (Optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
